@@ -1,34 +1,35 @@
 :root {
-    --color:#655021;
+    --color:#892828;
     --bg-color:#faf4e1;
     --card-color: rgb(158, 158, 8);
 
-    --blue: #7289d0;
-    --cream: #faf4e1;
-    --olive:rgb(196, 196, 81);
+    --blue: #4c62a6;
+    --cream: #f6f3e9;
+    --yellow:rgb(238, 225, 181);
     --orange: rgb(255, 56, 45);
     
     --body-copy: 1.5rem;
     --heading-copy: calc(var(--body-copy)*5);
 
     --gutter: 2rem;
-    --vertical: 4rem;
+    --vertical: 8rem;
 }
 
 h1 {
-    color: var(--blue);
+    color: var(--color);
     font-size: var(--heading-copy);
 }
 
 hgroup {
     background-color: var(--cream);
-    padding-block: var(--gutter);
+    padding-block: calc(var(--gutter)*5);
+    padding-left: var(--gutter);
 }
 
 body {
     font-family: sans-serif;
     color: var(--color);
-    background-color: var(--olive);
+    background-color: var(--yellow);
     font-size: var(--body-copy);
     block-size: 100vh;
     display: grid;
@@ -44,22 +45,21 @@ main {
 
 li {
     background-color: antiquewhite;
-    padding-block: var(--gutter);
-    padding-left: calc(var(--gutter)/2);
+    padding-block: calc(var(--gutter)*2.5);
+    padding-inline: calc(var(--gutter)*5);
     border: .1rem solid var(--card-color);
     border-radius: 1rem;
-
 }
 
 
 ul {
-    padding-inline: var(--gutter);
-    display: grid;
-    gap: var(--gutter);
+    padding-block: var(--gutter);
+    gap: calc(var(--gutter)*2.5);
+    display: flex;
 }
 
-.reverse{
-    color: var(--bg-color);
+footer{
+    color: var(--yellow);
     background-color: var(--blue);
     padding-inline: var(--gutter);
     padding-block: var(--vertical);
