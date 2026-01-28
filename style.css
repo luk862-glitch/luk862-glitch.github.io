@@ -1,15 +1,13 @@
 :root {
-    --color:#892828;
+    --color:#2875e8;
     --bg-color:#faf4e1;
-    --card-color: rgb(158, 158, 8);
 
-    --blue: #4c62a6;
+
     --cream: #f6f3e9;
-    --yellow:rgb(238, 225, 181);
-    --orange: rgb(255, 56, 45);
+    --yellow:rgb(238, 237, 234);
     
-    --body-copy: 1.5rem;
-    --heading-copy: calc(var(--body-copy)*5);
+    --body-copy: 1rem;
+    --heading-copy: calc(var(--body-copy)*2);
 
     --gutter: 2rem;
     --vertical: 8rem;
@@ -22,8 +20,20 @@ h1 {
 
 hgroup {
     background-color: var(--cream);
-    padding-block: calc(var(--gutter)*5);
+    padding-block: calc(var(--gutter)*2);
     padding-left: var(--gutter);
+}
+
+
+.nav {
+  display: flex;
+  gap: calc(var(--gutter)*3);
+  list-style: none;
+   justify-content: center;
+}
+
+a {
+    text-decoration: underline;
 }
 
 body {
@@ -33,7 +43,6 @@ body {
     font-size: var(--body-copy);
     block-size: 100vh;
     display: grid;
-    grid-template-rows: min-content 1fr min-content;
     align-items: center;
     
 }
@@ -41,26 +50,24 @@ body {
 main {
     padding-inline:var(--gutter);
     padding-block: var(--vertical);
+    display: grid;
+    justify-items: center;
 }
 
-li {
-    background-color: antiquewhite;
-    padding-block: calc(var(--gutter)*2.5);
-    padding-inline: calc(var(--gutter)*5);
-    border: .1rem solid var(--card-color);
-    border-radius: 1rem;
-}
 
 
 ul {
     padding-block: var(--gutter);
     gap: calc(var(--gutter)*2.5);
-    display: flex;
+    display: grid;
+    justify-items: center;
 }
 
 footer{
     color: var(--yellow);
-    background-color: var(--blue);
+    background-color: var(--color);
     padding-inline: var(--gutter);
-    padding-block: var(--vertical);
+    padding-block: calc(var(--gutter)*2);
+    display: grid;
+    justify-items: center;
 }
