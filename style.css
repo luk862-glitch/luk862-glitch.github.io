@@ -73,13 +73,13 @@ ul {
     padding-block: var(--spacing);
     gap: var(--spacing);
     display: grid;
-
 }
 
 
 @media (width > 600px) {
     ul {    
     gap: calc(var(--spacing)*2.5);
+    display: flex;
     
 }
 }
