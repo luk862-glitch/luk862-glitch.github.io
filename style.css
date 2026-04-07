@@ -1,36 +1,43 @@
-:root {
     --color:#2875e8;
     --bg-color:#faf4e1;
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+:root {
+    --primary-color:#000dff;
+    --secondary-color:rgb(238, 237, 234);
 
+    --bg-color:#e4e4e4;
     --cream: #f6f3e9;
-    --yellow:rgb(238, 237, 234);
     
     --body-copy: 1rem;
-    --heading-copy: calc(var(--body-copy)*2);
+    --heading-copy: 4rem;
 
-    --gutter: 2rem;
+    --spacing: 2rem;
     --vertical: 8rem;
+    --primary-font: 'Jost', sans-serif;
 }
 
 h1 {
+    font-family: (var(--primary-font));
     color: var(--color);
     font-size: var(--heading-copy);
 }
 
 hgroup {
-    background-color: var(--cream);
-    padding-block: calc(var(--gutter)*2);
-    padding-left: var(--gutter);
+    font-family: (var(--primary-font));
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding-block: calc(var(--spacing)*2);
+    padding-left: var(--spacing);
 }
 
 
 .nav {
   display: flex;
-  gap: calc(var(--gutter)*3);
+  gap: var(--spacing);
   list-style: none;
-   justify-content: center;
+  justify-content: center;
+}
 }
 
 a {
@@ -39,8 +46,9 @@ a {
 
 body {
     font-family: sans-serif;
-    color: var(--color);
     background-color: var(--yellow);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     font-size: var(--body-copy);
     block-size: 100vh;
     display: grid;
@@ -49,7 +57,7 @@ body {
 }
 
 main {
-    padding-inline:var(--gutter);
+    padding-inline:var(--spacing);
     padding-block: var(--vertical);
     display: grid;
     justify-items: center;
@@ -58,17 +66,16 @@ main {
 
 
 ul {
-    padding-block: var(--gutter);
-    gap: calc(var(--gutter)*2.5);
+    padding-block: var(--spacing);
+    gap: var(--spacing);
     display: grid;
-    justify-items: center;
 }
 
 footer{
-    color: var(--yellow);
-    background-color: var(--color);
-    padding-inline: var(--gutter);
-    padding-block: calc(var(--gutter)*2);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding-inline: var(--spacing);
+    padding-block: calc(var(--spacing)*2);
     display: grid;
     justify-items: center;
 }
