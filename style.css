@@ -36,7 +36,12 @@ hgroup {
   list-style: none;
   justify-content: center;
 }
+
+@media (width > 600px) {
+    .nav {
+    gap: calc(var(--spacing)*3);}
 }
+
 
 a {
     text-decoration: underline;
@@ -68,6 +73,15 @@ ul {
     display: grid;
 
 }
+
+
+@media (width > 600px) {
+    ul {    
+    gap: calc(var(--spacing)*2.5);
+    
+}
+}
+
 
 footer{
     color: var(--secondary-color);
