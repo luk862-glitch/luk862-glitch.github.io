@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
-    --primary-color:#000dff;
-    --secondary-color:rgb(238, 237, 234);
+    font-size: 110%;
+    --primary-color:#0b0d7f;
+    --secondary-color:rgb(249, 249, 249);
 
     --bg-color:#e4e4e4;
     --cream: #f6f3e9;
@@ -12,17 +14,17 @@
 
     --spacing: 2rem;
     --vertical: 8rem;
-    --primary-font: 'Jost', sans-serif;
+    --primary-font: 'Funnel Sans', sans-serif;
+
+    font-family: var(--primary-font);
 }
 
 h1 {
-    font-family: (var(--primary-font));
     color: var(--color);
     font-size: var(--heading-copy);
 }
 
 hgroup {
-    font-family: (var(--primary-font));
     color: var(--secondary-color);
     background-color: var(--primary-color);
     padding-block: calc(var(--spacing)*2);
@@ -49,7 +51,6 @@ hgroup {
 
 
 body {
-    font-family: sans-serif;
     color: var(--primary-color);
     background-color: var(--secondary-color);
     font-size: var(--body-copy);
