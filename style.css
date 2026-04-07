@@ -84,6 +84,14 @@ ul {
 }
 }
 
+.project-cards {
+  width: 30rem;
+  /* border-color: var(--primary-color);
+  border-width: 2px;
+  border-style: solid; */
+
+}
+
 
 footer{
     color: var(--secondary-color);
