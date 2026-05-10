@@ -91,6 +91,13 @@ ul {
 
 }
 
+.tags {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    display: block;
+    text-align: right;
+    padding-block: .5rem;
+}
 
 footer{
     color: var(--secondary-color);
