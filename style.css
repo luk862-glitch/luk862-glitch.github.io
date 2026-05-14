@@ -89,7 +89,6 @@ body {
 
 main {
     padding-inline:var(--spacing);
-    padding-block: var(--vertical);
     display: grid;
     justify-items: center;
 }
