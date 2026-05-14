@@ -23,6 +23,11 @@ h1 {
     font-size: var(--heading-copy);
 }
 
+main p {
+    max-width: 60ch;
+    text-align: center;
+    margin-block: calc(var(--spacing)*2);
+}
 
 hgroup {
     /* color: var(--secondary-color); */
