@@ -32,9 +32,6 @@ main p {
 }
 
 hgroup {
-    /* color: var(--secondary-color); */
-    /* background-color: var(--primary-color); */
-    /* border: var(--primary-color) dashed .15rem; */
     padding-block: 1rem;
     padding-inline: var(--spacing);
     border-radius: 2rem;
