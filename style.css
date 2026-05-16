@@ -45,6 +45,10 @@ hgroup {
     align-items: center;
 }
 
+.nav li:first-child {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
 .nav-links {
     display: flex;
